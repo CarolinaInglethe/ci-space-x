@@ -27,6 +27,7 @@ const Releasers = () => {
   return (
     <div className="releases-container">
        <NavBarReleases />
+       <h2>Todos Lançamentos</h2>
     </div>
   )
 }
