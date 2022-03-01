@@ -5,7 +5,7 @@ import NavBarReleases from '../components/NavBarReleases';
 const Releasers = () => {
   const { 
     requestAllReleases,
-    requestnextRelease,
+    requestNextRelease,
     requestLatestRelease,
     requestUpComingReleases,
     requestPastReleases,
@@ -14,7 +14,7 @@ const Releasers = () => {
   useEffect(() => {
     const allReleases = async () => await requestAllReleases();
     allReleases();
-    const nextRelease = async () => await requestnextRelease();
+    const nextRelease = async () => await requestNextRelease();
     nextRelease();
     const latestRelease = async () => await requestLatestRelease();
     latestRelease();
