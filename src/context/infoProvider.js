@@ -4,9 +4,9 @@ import axios from 'axios';
 import InfoContext from './infoContext';
 
 function InfoProvider({ children }) {
-  const [ infoReleasers, setInfoReleasers ] = useState([])
+  const [ infoAllReleases, setinfoAllReleases ] = useState([])
 
-  const requestReleasers = async () => {
+  const requestAllReleases = async () => {
     const getRealeases = await axios
       .get('https://api.spacexdata.com/v5/launches')
       .then((res) => res.data)
@@ -17,9 +17,9 @@ function InfoProvider({ children }) {
   };
 
   const contextValues = {
-    requestReleasers,
-    setInfoReleasers,
-    infoReleasers,
+    requestAllReleases,
+    setinfoAllReleases,
+    infoAllReleases,
   };
 
   return (

@@ -3,11 +3,11 @@ import InfoContext from '../context/infoContext';
 import NavBarReleases from '../components/NavBarReleases';
 
 const Releasers = () => {
-  const { requestReleasers, setInfoReleasers } = useContext(InfoContext);
+  const { requestAllReleases, setinfoAllReleases } = useContext(InfoContext);
 
   useEffect(() => {
-    const response = async () => await requestReleasers()
-    setInfoReleasers(response())
+    const response = async () => await requestAllReleases()
+    setinfoAllReleases(response())
   }, [])
 
   return (
