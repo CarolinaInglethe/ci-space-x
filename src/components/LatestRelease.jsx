@@ -1,9 +1,11 @@
 import React from 'react';
+import NavBarReleases from './NavBarReleases';
 
 const LatestRelease = () => {
   return (
     <div>
-      <h1>Último Lançamento</h1>
+      <NavBarReleases />
+      <h2>Último Lançamento</h2>
     </div>
   )
 }

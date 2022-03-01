@@ -1,9 +1,11 @@
 import React from 'react';
+import NavBarReleases from './NavBarReleases';
 
 const AllUpcomingReleases = () => {
   return (
     <div>
-      <h1>Lançamentos futuros</h1>
+      <NavBarReleases />
+      <h2>Lançamentos futuros</h2>
     </div>
   )
 }

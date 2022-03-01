@@ -1,9 +1,11 @@
 import React from 'react';
+import NavBarReleases from './NavBarReleases';
 
 const AllPastReleases = () => {
   return (
     <div>
-      <h1>Lançamentos Passados</h1>
+      <NavBarReleases />
+      <h2>Lançamentos Passados</h2>
     </div>
   )
 }

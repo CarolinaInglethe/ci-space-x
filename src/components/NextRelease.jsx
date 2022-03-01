@@ -1,9 +1,11 @@
 import React from 'react';
+import NavBarReleases from './NavBarReleases';
 
 const NextRelease = () => {
   return (
     <div>
-      <h1>Próximo Lançamento</h1>
+      <NavBarReleases />
+      <h2>Próximo Lançamento</h2>
     </div>
   )
 }
