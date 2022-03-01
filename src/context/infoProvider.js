@@ -4,7 +4,7 @@ import axios from 'axios';
 import InfoContext from './infoContext';
 
 function InfoProvider({ children }) {
-  const [ infoAllReleases, setinfoAllReleases ] = useState([])
+  const [ infoAllReleases, setInfoAllReleases ] = useState([])
 
   const requestAllReleases = async () => {
     const getRealeases = await axios
@@ -18,7 +18,7 @@ function InfoProvider({ children }) {
 
   const contextValues = {
     requestAllReleases,
-    setinfoAllReleases,
+    setInfoAllReleases,
     infoAllReleases,
   };
 
