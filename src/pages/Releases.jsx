@@ -12,8 +12,6 @@ const Releasers = () => {
 
   return (
     <div className="releases-container">
-       <h1>Lançamentos</h1>
-
        <NavBarReleases />
     </div>
   )
