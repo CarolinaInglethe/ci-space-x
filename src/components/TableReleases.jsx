@@ -1,27 +1,47 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const TableReleases = ({ InfoRealeses }) => {
+const TableReleases = ({ infoRealeses }) => {
+  const columns = [ "Nome", "Numero do voo" , "Data/Hora de lançamento", "Foguete" ]
   
+  console.log(infoRealeses)
+
+  if(!infoRealeses) return <p>Carrengando...</p>
+
   return (
     <div className="table-releases-container">
-     <h2>Tabela</h2>
+     <p>Tabela de informações:</p>
 
      <table>
      <thead>
         <tr>
-          <th>l</th>
-          <th>k</th>
+          {
+            columns.map((colum, index) => (
+              <th key={index} >{colum}</th>
+            ))
+          }
         </tr>
       </thead>
       <tbody>
+        {/* {
+          infoRealeses.map((obj) => (
+            <tr>
+              <td>{obj.name}</td>
+            </tr>
+          ))
+        } */}
         <tr>
           <td>x</td>
-          <td>y</td>
+          <td>x</td>
         </tr>
       </tbody>
      </table>
     </div>
   )
+}
+
+TableReleases.prototype = {
+  infoRealeses: PropTypes.array,
 }
 
 export default TableReleases;
