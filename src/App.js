@@ -1,27 +1,21 @@
 import './css/App.css';
-import axios from 'axios'
-import { useEffect, useState } from 'react';
+import InfoProvider from './context/infoProvider';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Realeses from './pages/Releases';
 
 function App() {
-  const [infoReleases, setInfoReleases] = useState([])
-
-  const requestReleases = async () => {
-    return await axios.get('https://api.spacexdata.com/v5/launches')
-    .then((res) => res.data)
-  }
-
-  useEffect(() => {
-    const responseReleases = async () => await requestReleases()
-    setInfoReleases(responseReleases())
-  }, [])
-
-  console.log(infoReleases)
 
   return (
     <div className="App">
-      <h1>
-        Releases
-      </h1>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
+        <InfoProvider>
+
+          <Routes>
+            <Route path="/" element={ <Realeses />} />
+          </Routes>
+
+        </InfoProvider>
+      </BrowserRouter>
     </div>
   );
 }
