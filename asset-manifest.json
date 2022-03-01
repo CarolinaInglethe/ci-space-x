@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "./static/css/main.479e20c1.css",
-    "main.js": "./static/js/main.966de8fb.js",
-    "static/js/787.b67fefc3.chunk.js": "./static/js/787.b67fefc3.chunk.js",
-    "static/media/foguete-cinza.png": "./static/media/foguete-cinza.c58c4569e3a2c53184c5.png",
-    "index.html": "./index.html",
-    "main.479e20c1.css.map": "./static/css/main.479e20c1.css.map",
-    "main.966de8fb.js.map": "./static/js/main.966de8fb.js.map",
-    "787.b67fefc3.chunk.js.map": "./static/js/787.b67fefc3.chunk.js.map"
+    "main.css": "/ci-space-x/static/css/main.479e20c1.css",
+    "main.js": "/ci-space-x/static/js/main.6474da1f.js",
+    "static/js/787.b67fefc3.chunk.js": "/ci-space-x/static/js/787.b67fefc3.chunk.js",
+    "static/media/foguete-cinza.png": "/ci-space-x/static/media/foguete-cinza.c58c4569e3a2c53184c5.png",
+    "index.html": "/ci-space-x/index.html",
+    "main.479e20c1.css.map": "/ci-space-x/static/css/main.479e20c1.css.map",
+    "main.6474da1f.js.map": "/ci-space-x/static/js/main.6474da1f.js.map",
+    "787.b67fefc3.chunk.js.map": "/ci-space-x/static/js/787.b67fefc3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.479e20c1.css",
-    "static/js/main.966de8fb.js"
+    "static/js/main.6474da1f.js"
   ]
 }
