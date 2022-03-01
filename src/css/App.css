@@ -2,10 +2,6 @@
   background-color: rgba(40, 110, 168, 0.137);
 }
 
-.home-container , .releases-container {
-  display: flex;
-}
-
 .navbar-container {
   background-color: rgba(255, 255, 255, 0.972);
   border-radius: 5px;
@@ -27,3 +23,35 @@ a {
 a:hover {
   color: rgba(0, 0, 0, 0.561);
 }
+
+.home-container , .releases-container {
+  display: flex;
+}
+
+.home-section {
+  margin: 25%;
+}
+
+.home-section button {
+  background-color: rgba(27, 158, 175, 0.651);
+  border: 1px rgba(21, 114, 156, 0.205) solid;
+  border-radius: 5px;
+  margin: 50px;
+  padding: 5px;
+  width: 50%;
+}
+
+.home-section button a {
+  color: aliceblue;
+}
+
+.home-section button:hover {
+  background-color: rgba(27, 158, 175, 0.466);
+}
+
+.home-section h1, p {
+  color: rgba(0, 0, 0, 0.781);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
