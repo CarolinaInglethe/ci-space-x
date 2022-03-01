@@ -4,12 +4,11 @@ import InfoContext from '../context/infoContext';
 import TableReleases from '../components/TableReleases';
 
 const Releasers = () => {
-  const { requestReleasers, setInfoReleasers, infoReleasers } = useContext(InfoContext);
+  const { requestReleasers, setInfoReleasers } = useContext(InfoContext);
 
   useEffect(() => {
     const response = async () => await requestReleasers()
     setInfoReleasers(response())
-    console.log(infoReleasers)
   }, [])
 
   return (
