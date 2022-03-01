@@ -1,10 +1,7 @@
-import React, { useContext } from 'react';
-import InfoContext from '../context/infoContext';
+import React from 'react';
 
-const TableReleases = () => {
-  const { infoReleasers } = useContext(InfoContext);
-
-  console.log(infoReleasers)
+const TableReleases = ({ Info }) => {
+  
   return (
     <div className="table-releases-container">
      <h2>Tabela</h2>

@@ -1,6 +1,7 @@
 import React, { useContext, useEffect } from 'react';
 import InfoContext from '../context/infoContext';
 import NavBarReleases from '../components/NavBarReleases';
+import TableReleases from '../components/TableReleases';
 
 const Releasers = () => {
   const { 
@@ -28,6 +29,7 @@ const Releasers = () => {
     <div className="releases-container">
        <NavBarReleases />
        <h2>Todos Lançamentos</h2>
+       <TableReleases />
     </div>
   )
 }

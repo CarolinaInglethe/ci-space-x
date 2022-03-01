@@ -4,10 +4,10 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Realeses from './pages/Releases';
 import Home from './pages/Home';
 import NavBar from './components/NavBar';
-import NextRelease from './components/NextRelease';
-import LatestRelease from './components/LatestRelease';
-import AllUpcomingReleases from './components/AllUpcomingReleases';
-import AllPastReleases from './components/AllPastReleases';
+import NextRelease from './pages/NextRelease';
+import LatestRelease from './pages/LatestRelease';
+import AllUpcomingReleases from './pages/AllUpcomingReleases';
+import AllPastReleases from './pages/AllPastReleases';
 
 function App() {
 
