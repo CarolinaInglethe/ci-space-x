@@ -4,7 +4,7 @@ import TableReleases from '../components/TableReleases';
 
 const LatestRelease = () => {
   return (
-    <div>
+    <div className="releases-container">
       <NavBarReleases />
       <h2>Último Lançamento</h2>
       <TableReleases />

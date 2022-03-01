@@ -4,7 +4,7 @@ import TableReleases from '../components/TableReleases';
 
 const AllPastReleases = () => {
   return (
-    <div>
+    <div className="releases-container">
       <NavBarReleases />
       <h2>Lançamentos Passados</h2>
       <TableReleases />
