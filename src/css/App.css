@@ -100,3 +100,8 @@ a {
 .navbar-releases-links a:hover {
   color: rgba(242, 247, 251, 0.801);
 }
+
+.table-releases-container {
+  margin-top: 50px;
+  margin-left: 20%;
+}

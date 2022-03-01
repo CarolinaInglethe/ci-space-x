@@ -1,6 +1,6 @@
 import React from 'react';
 
-const TableReleases = ({ Info }) => {
+const TableReleases = ({ InfoRealeses }) => {
   
   return (
     <div className="table-releases-container">
