@@ -5,7 +5,7 @@ const NavBarReleases = () => {
 
   return (
     <div className="navbar-releases-container">
-      <Link to="/release/next">Proximo Lançamento</Link>
+      <Link to="/release/next">Próximo Lançamento</Link>
       <Link to="/release/latest">Último lançamento</Link>
       <Link to="/releases/next">Próximos lançamentos</Link>
       <Link to="/releases/next">Lançamentos passados</Link>
