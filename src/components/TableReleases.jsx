@@ -8,32 +8,6 @@ const TableReleases = ({ infoRealeses }) => {
 
   if(!infoRealeses) return <p>Carrengando...</p>
 
-  if(infoRealeses.name) {
-    return <div className="table-releases-container">
-      <table>
-     <thead>
-        <tr>
-          {
-            columns.map((colum, index) => (
-              <th key={index} >{colum}</th>
-            ))
-          }
-        </tr>
-      </thead>
-      <tbody>
-        {
-            <tr>
-              <td>{infoRealeses.name}</td>
-              <td>{infoRealeses.flight_number}</td>
-              <td>{Date(infoRealeses.date_utc)}</td>
-              <td>{infoRealeses.rocket}</td>
-            </tr>
-        }
-      </tbody>
-     </table>
-    </div>
-  }
-
   return (
     <div className="table-releases-container">
      <p>Tabela de informações:</p>
@@ -50,7 +24,13 @@ const TableReleases = ({ infoRealeses }) => {
       </thead>
       <tbody>
         {
-          infoRealeses.map((obj, index) => (
+          infoRealeses.name ?  <tr>
+          <td>{infoRealeses.name}</td>
+          <td>{infoRealeses.flight_number}</td>
+          <td>{Date(infoRealeses.date_utc)}</td>
+          <td>{infoRealeses.rocket}</td>
+        </tr> :
+           infoRealeses.map((obj, index) => (
             <tr key={index}>
               <td>{obj.name}</td>
               <td>{obj.flight_number}</td>
@@ -59,6 +39,7 @@ const TableReleases = ({ infoRealeses }) => {
             </tr>
           ))
         }
+        
       </tbody>
      </table>
     </div>
