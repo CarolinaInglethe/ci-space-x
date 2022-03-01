@@ -1,5 +1,6 @@
 .App {
   background-color: rgba(40, 110, 168, 0.137);
+  display: flex;
 }
 
 .navbar-container {
@@ -7,29 +8,39 @@
   border-radius: 5px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  padding: 5%;
-  padding-bottom: 58%;
+  padding: 3%;
+  padding-bottom: 33%;
+}
+
+.navbar-container span {
+  display: flex;
+  color: black;
+  font-size: large;
+  margin-top: 20px;
+  padding: 3px;
+  text-decoration: none;
 }
 
 a {
   color: black;
   font-size: large;
-  margin: 10%;
-  padding: 3px;
+  padding: 2px;
   text-decoration: none;
 }
 
-a:hover {
+.navbar-container a:hover {
   color: rgba(0, 0, 0, 0.561);
 }
 
-.home-container , .releases-container {
+.home-container {
+  margin: auto;
   display: flex;
+  flex-direction: column;
 }
 
 .home-section {
-  margin: 25%;
+  margin: auto;
+  text-align: center;
 }
 
 .home-section button {
@@ -50,8 +61,42 @@ a:hover {
 }
 
 .home-section h1, p {
-  color: rgba(0, 0, 0, 0.781);
+  color: rgba(0, 0, 0, 0.698);
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+.releases-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px;
+}
 
+.navbar-releases-links {
+  background-color: rgba(27, 140, 155, 0.651);
+  display: flex;
+  justify-content: space-around;
+  padding: 5px;
+}
+
+.navbar-releases-links a {
+  color: rgb(247, 251, 255);
+  font-size: large;
+}
+
+.navbar-releases-links a:hover {
+  color: rgba(242, 247, 251, 0.801);
+}
+
+.table-releases-container {
+  background-color: aliceblue;
+  border-radius: 5px;
+  margin-top: 50px;
+  padding: 10px;
+  text-align: center;
+}
+
+.table-releases-container td {
+  background-color: rgba(158, 160, 161, 0.13);
+  border-radius: 5px;
+  padding: 5px;
+}

@@ -1,22 +1,24 @@
 import React, { useContext, useEffect } from 'react';
-import NavBar from '../components/NavBar';
 import InfoContext from '../context/infoContext';
+import NavBarReleases from '../components/NavBarReleases';
+import TableReleases from '../components/TableReleases';
 
 const Releasers = () => {
-  const { requestReleasers, setInfoReleasers, infoReleasers } = useContext(InfoContext);
+  const { 
+    requestAllReleases,
+    infoAllReleases,
+   } = useContext(InfoContext);
 
   useEffect(() => {
-    const response = async () => await requestReleasers()
-    setInfoReleasers(response())
-    console.log(infoReleasers)
+    const allReleases = async () => await requestAllReleases();
+    allReleases();
   }, [])
 
   return (
     <div className="releases-container">
-      <NavBar />
-      <div>
-        Releases
-      </div>
+       <NavBarReleases />
+       <h2>Todos Lançamentos</h2>
+       <TableReleases infoRealeses={ infoAllReleases }/>
     </div>
   )
 }

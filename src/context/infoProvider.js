@@ -4,22 +4,63 @@ import axios from 'axios';
 import InfoContext from './infoContext';
 
 function InfoProvider({ children }) {
-  const [ infoReleasers, setInfoReleasers ] = useState([])
+  const [ infoAllReleases, setInfoAllReleases ] = useState([]);
+  const [ infoNextRelease, setInfoNextRelease ] = useState({});
+  const [ infoLatestRelease, setInfoLatestRelease ] = useState({});
+  const [ infoUpComingReleases, setInfoUpComingReleases ] = useState([]);
+  const [ infoPastReleases, setInfoPastReleases ] = useState([]);
 
-  const requestReleasers = async () => {
-    const getRealeases = await axios
+  const requestAllReleases = async () => {
+    await axios
       .get('https://api.spacexdata.com/v5/launches')
-      .then((res) => res.data)
-      .catch((err) => err.response);
-
-    if (!getRealeases) return 'Falha na requisiçao';
-    return getRealeases;
+      .then((res) => setInfoAllReleases(res.data))
+      .catch((err) => console.log(err));
   };
 
+  const requestNextRelease = async () => {
+    await axios
+      .get('https://api.spacexdata.com/v5/launches/next')
+      .then((res) => setInfoNextRelease(res.data))
+      .catch((err) => console.log(err));
+  }
+
+  const requestLatestRelease = async () => {
+    await axios
+      .get('https://api.spacexdata.com/v5/launches/latest')
+      .then((res) => setInfoLatestRelease(res.data))
+      .catch((err) => console.log(err));;
+  }
+
+  const requestUpComingReleases = async () => {
+    await axios
+      .get('https://api.spacexdata.com/v5/launches/upcoming')
+      .then((res) => setInfoUpComingReleases(res.data))
+      .catch((err) => console.log(err));
+  }
+
+  const requestPastReleases = async () => {
+    await axios
+      .get('https://api.spacexdata.com/v5/launches/past')
+      .then((res) => setInfoPastReleases(res.data))
+      .catch((err) => console.log(err));
+  }
+
   const contextValues = {
-    requestReleasers,
-    setInfoReleasers,
-    infoReleasers,
+    requestAllReleases,
+    requestNextRelease,
+    requestLatestRelease,
+    requestUpComingReleases,
+    requestPastReleases,
+    infoAllReleases,
+    setInfoAllReleases,
+    infoNextRelease,
+    setInfoNextRelease,
+    infoLatestRelease,
+    setInfoLatestRelease,
+    infoUpComingReleases,
+    setInfoUpComingReleases,
+    infoPastReleases,
+    setInfoPastReleases
   };
 
   return (
