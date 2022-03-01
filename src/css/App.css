@@ -8,7 +8,6 @@
   border-radius: 5px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   padding: 3%;
   padding-bottom: 33%;
 }
@@ -89,7 +88,7 @@ a {
   justify-content: space-around;
   margin-left: 10%;
   padding: 5px;
-  width: 180%;
+  width: 149%;
 }
 
 .navbar-releases-links a {
