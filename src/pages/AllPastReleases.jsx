@@ -1,11 +1,17 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import NavBarReleases from '../components/NavBarReleases';
 import TableReleases from '../components/TableReleases';
 import InfoContext from '../context/infoContext';
 
 
 const AllPastReleases = () => {
-  const { infoPastReleases } = useContext(InfoContext)
+  const { requestPastReleases, infoPastReleases } = useContext(InfoContext)
+
+
+  useEffect(() => {
+    const pastRelease = async () => await requestPastReleases();
+    pastRelease();
+  }, [])
 
   return (
     <div className="releases-container">
