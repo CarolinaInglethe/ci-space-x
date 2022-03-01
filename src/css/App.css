@@ -33,7 +33,7 @@ a {
   color: rgba(0, 0, 0, 0.561);
 }
 
-.home-container , .releases-container {
+.home-container {
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -66,10 +66,33 @@ a {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+.releases-container {
+  display: flex;
+  flex-direction: column;
+}
+
 .releases-section {
   display: flex;
   flex-direction: column;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: large;
   margin: 10px;
+}
+
+.navbar-releases-container {
+  background-color: rgba(27, 140, 155, 0.651);
+  display: flex;
+  justify-content: space-around;
+  margin-left: 20%;
+  padding: 5px;
+  width: 180%;
+}
+
+.navbar-releases-container a {
+  color: rgb(247, 251, 255);
+  font-size: large;
+}
+
+.navbar-releases-container a:hover {
+  color: rgba(242, 247, 251, 0.801);
 }
