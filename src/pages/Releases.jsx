@@ -1,7 +1,6 @@
 import React, { useContext, useEffect } from 'react';
-import NavBar from '../components/NavBar';
 import InfoContext from '../context/infoContext';
-import TableReleases from '../components/TableReleases';
+import NavBarReleases from '../components/NavBarReleases';
 
 const Releasers = () => {
   const { requestReleasers, setInfoReleasers } = useContext(InfoContext);
@@ -13,14 +12,9 @@ const Releasers = () => {
 
   return (
     <div className="releases-container">
-      <NavBar />
+       <h1>Lançamentos</h1>
 
-      <section className="releases-section">
-        <h1>Lançamentos</h1>
-
-        <TableReleases />
-      </section>
-
+       <NavBarReleases />
     </div>
   )
 }
