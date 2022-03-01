@@ -15,9 +15,9 @@ const Releasers = () => {
     <div className="releases-container">
       <NavBar />
 
-      <div>
-        Lançamentos 
-      </div>
+      <section className="releases-section">
+        <h1>Lançamentos</h1>
+      </section>
 
     </div>
   )
