@@ -80,19 +80,23 @@ a {
 }
 
 .navbar-releases-container {
+  margin-left: 50px ;
+}
+
+.navbar-releases-links {
   background-color: rgba(27, 140, 155, 0.651);
   display: flex;
   justify-content: space-around;
-  margin-left: 20%;
+  margin-left: 10%;
   padding: 5px;
   width: 180%;
 }
 
-.navbar-releases-container a {
+.navbar-releases-links a {
   color: rgb(247, 251, 255);
   font-size: large;
 }
 
-.navbar-releases-container a:hover {
+.navbar-releases-links a:hover {
   color: rgba(242, 247, 251, 0.801);
 }
