@@ -8,6 +8,12 @@ const TableReleases = ({ infoRealeses }) => {
 
   if(!infoRealeses) return <p>Carrengando...</p>
 
+  if( typeof(infoRealeses) === 'object') {
+    <div className="table-releases-container">
+      string
+    </div>
+  }
+
   return (
     <div className="table-releases-container">
      <p>Tabela de informações:</p>
