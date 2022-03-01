@@ -11,53 +11,38 @@ function InfoProvider({ children }) {
   const [ infoPastReleases, setInfoPastReleases ] = useState([]);
 
   const requestAllReleases = async () => {
-    const getRealeases = await axios
+    await axios
       .get('https://api.spacexdata.com/v5/launches')
-      .then((res) => res.data)
-      .catch((err) => err.response);
-
-    if (!getRealeases) return 'Falha na requisiçao launches';
-    return getRealeases;
+      .then((res) => setInfoAllReleases(res.data))
+      .catch((err) => console.log(err));
   };
 
   const requestNextRelease = async () => {
-    const getNextRelease = await axios
+    await axios
       .get('https://api.spacexdata.com/v5/launches/next')
-      .then((res) => res.data)
-      .catch((err) => err.response);
-
-    if (!getNextRelease) return 'Falha na requisiçao launches next';
-    return getNextRelease;
+      .then((res) => setInfoNextRelease(res.data))
+      .catch((err) => console.log(err));
   }
 
   const requestLatestRelease = async () => {
-    const getLatestRelease = await axios
+    await axios
       .get('https://api.spacexdata.com/v5/launches/latest')
-      .then((res) => res.data)
-      .catch((err) => err.response);
-
-    if (!getLatestRelease) return 'Falha na requisiçao launches latest';
-    return getLatestRelease;
+      .then((res) => setInfoLatestRelease(res.data))
+      .catch((err) => console.log(err));;
   }
 
   const requestUpComingReleases = async () => {
-    const getUpComingReleases = await axios
+    await axios
       .get('https://api.spacexdata.com/v5/launches/upcoming')
-      .then((res) => res.data)
-      .catch((err) => err.response);
-
-    if (!getUpComingReleases) return 'Falha na requisiçao launches upcoming';
-    return getUpComingReleases;
+      .then((res) => setInfoUpComingReleases(res.data))
+      .catch((err) => console.log(err));
   }
 
   const requestPastReleases = async () => {
-    const getPastReleases = await axios
+    await axios
       .get('https://api.spacexdata.com/v5/launches/past')
-      .then((res) => res.data)
-      .catch((err) => err.response);
-
-    if (!getPastReleases) return 'Falha na requisiçao launches past';
-    return getPastReleases;
+      .then((res) => setInfoPastReleases(res.data))
+      .catch((err) => console.log(err));
   }
 
   const contextValues = {
