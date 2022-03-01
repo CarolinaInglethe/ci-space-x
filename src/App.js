@@ -2,6 +2,7 @@ import './css/App.css';
 import InfoProvider from './context/infoProvider';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Realeses from './pages/Releases';
+import Home from './pages/Home';
 
 function App() {
 
@@ -11,7 +12,8 @@ function App() {
         <InfoProvider>
 
           <Routes>
-            <Route path="/" element={ <Realeses />} />
+            <Route path="/" element={ <Home /> } />
+            <Route path="/releases" element={ <Realeses />} />
           </Routes>
 
         </InfoProvider>

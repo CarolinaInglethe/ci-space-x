@@ -1,4 +1,5 @@
 import React, { useContext, useEffect } from 'react';
+import NavBar from '../components/NavBar';
 import InfoContext from '../context/infoContext';
 
 const Releasers = () => {
@@ -11,9 +12,12 @@ const Releasers = () => {
   }, [])
 
   return (
-    <h1>
+    <div className="releases-container">
+      <NavBar />
+      <div>
         Releases
-    </h1>
+      </div>
+    </div>
   )
 }
 
