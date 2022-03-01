@@ -1,6 +1,15 @@
-import React from 'react';
+import React, { useContext, useEffect, useState } from 'react';
+import InfoContext from '../context/infoContext';
 
-const Realeses = () => {
+const Releasers = () => {
+  const { requestReleasers, setInfoReleasers, infoReleasers } = useContext(InfoContext);
+
+  useEffect(() => {
+    const response = async () => await requestReleasers()
+    setInfoReleasers(response())
+    console.log(infoReleasers)
+  }, [])
+
   return (
     <h1>
         Releases
@@ -8,4 +17,4 @@ const Realeses = () => {
   )
 }
 
-export default Realeses;
+export default Releasers;

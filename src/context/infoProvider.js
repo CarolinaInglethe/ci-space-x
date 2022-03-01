@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import axios from 'axios';
 import InfoContext from './infoContext';
 
 function InfoProvider({ children }) {
+  const [ infoReleasers, setInfoReleasers ] = useState([])
 
   const requestReleasers = async () => {
     const getRealeases = await axios
@@ -17,6 +18,8 @@ function InfoProvider({ children }) {
 
   const contextValues = {
     requestReleasers,
+    setInfoReleasers,
+    infoReleasers,
   };
 
   return (
