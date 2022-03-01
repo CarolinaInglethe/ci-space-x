@@ -1,11 +1,29 @@
+.App {
+  background-color: rgba(40, 110, 168, 0.137);
+}
+
 .home-container , .releases-container {
   display: flex;
 }
 
 .navbar-container {
-  border: 1px black solid;
+  background-color: rgba(255, 255, 255, 0.972);
+  border-radius: 5px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   padding: 5%;
   padding-bottom: 58%;
+}
+
+a {
+  color: black;
+  font-size: large;
+  margin: 10%;
+  padding: 3px;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgba(0, 0, 0, 0.561);
 }
