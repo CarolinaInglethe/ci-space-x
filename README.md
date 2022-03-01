@@ -15,6 +15,7 @@ Assim que o projeto estiver em sua maquina você deve :
 ### Como é o site ?
 
 Ele irá conter uma pagina inicial , onde listara todos lançamentos e suas datas.
-Conterá também uma pagina de detalhers de determinado lançamento.
+Proximo lancamento , Ultimo lancamento , Proximos lancamentos ,
+Lancamentos passados.
 
 #### O projeto ainda esta em construção....
