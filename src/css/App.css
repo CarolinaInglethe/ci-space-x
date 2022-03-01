@@ -9,7 +9,7 @@
   flex-direction: column;
   justify-content: space-between;
   padding: 5%;
-  padding-bottom: 58%;
+  padding-bottom: 33%;
 }
 
 a {
@@ -29,7 +29,7 @@ a:hover {
 }
 
 .home-section {
-  margin: 25%;
+  margin: auto;
 }
 
 .home-section button {
@@ -50,7 +50,7 @@ a:hover {
 }
 
 .home-section h1, p {
-  color: rgba(0, 0, 0, 0.781);
+  color: rgba(0, 0, 0, 0.698);
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
