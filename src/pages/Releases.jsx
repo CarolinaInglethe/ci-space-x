@@ -3,11 +3,25 @@ import InfoContext from '../context/infoContext';
 import NavBarReleases from '../components/NavBarReleases';
 
 const Releasers = () => {
-  const { requestAllReleases, setInfoAllReleases } = useContext(InfoContext);
+  const { 
+    requestAllReleases,
+    requestnextRelease,
+    requestLatestRelease,
+    requestUpComingReleases,
+    requestPastReleases,
+   } = useContext(InfoContext);
 
   useEffect(() => {
-    const response = async () => await requestAllReleases()
-    setInfoAllReleases(response())
+    const allReleases = async () => await requestAllReleases();
+    allReleases();
+    const nextRelease = async () => await requestnextRelease();
+    nextRelease();
+    const latestRelease = async () => await requestLatestRelease();
+    latestRelease();
+    const upcomingRelease = async () => await requestUpComingReleases();
+    upcomingRelease();
+    const pastReleases = async () => await requestPastReleases();
+    pastReleases();
   }, [])
 
   return (
