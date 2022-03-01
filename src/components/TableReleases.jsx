@@ -8,7 +8,7 @@ const TableReleases = ({ infoRealeses }) => {
 
   if(!infoRealeses) return <p>Carrengando...</p>
 
-  if( infoRealeses.name) {
+  if(infoRealeses.name) {
     return <div className="table-releases-container">
       <table>
      <thead>
@@ -50,8 +50,8 @@ const TableReleases = ({ infoRealeses }) => {
       </thead>
       <tbody>
         {
-          infoRealeses.map((obj) => (
-            <tr>
+          infoRealeses.map((obj, index) => (
+            <tr key={index}>
               <td>{obj.name}</td>
               <td>{obj.flight_number}</td>
               <td>{Date(obj.date_utc)}</td>
