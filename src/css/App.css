@@ -8,19 +8,27 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 5%;
+  padding: 3%;
   padding-bottom: 33%;
+}
+
+.navbar-container span {
+  display: flex;
+  color: black;
+  font-size: large;
+  margin-top: 20px;
+  padding: 3px;
+  text-decoration: none;
 }
 
 a {
   color: black;
   font-size: large;
-  margin: 10%;
-  padding: 3px;
+  padding: 2px;
   text-decoration: none;
 }
 
-a:hover {
+.navbar-container a:hover {
   color: rgba(0, 0, 0, 0.561);
 }
 
