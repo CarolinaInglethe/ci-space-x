@@ -1,10 +1,11 @@
 import React from 'react';
-
+import NavBar from '../components/NavBar';
 
 function Home() {
 
   return (
-    <div className="Home">
+    <div className="home-container">
+     <NavBar />
      <div>
          Home
      </div>

@@ -1,0 +1,11 @@
+.home-container , .releases-container {
+  display: flex;
+}
+
+.navbar-container {
+  border: 1px black solid;
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+  padding-bottom: 58%;
+}
