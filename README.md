@@ -15,7 +15,7 @@ Assim que o projeto estiver em sua maquina você deve :
 ### Test
 
 - para rodar testes : npm test;
-- depois de rodar nom test digite a
+- depois de rodar o test digite : a
 
 ## Como é o site ?
 
