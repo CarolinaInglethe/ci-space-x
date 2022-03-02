@@ -25,12 +25,13 @@ const TableReleases = ({ infoRealeses }) => {
       <tbody>
         {
           infoRealeses.name ?  
-          <tr>
-            <td>{infoRealeses.name}</td>
-            <td>{infoRealeses.flight_number}</td>
-            <td>{Date(infoRealeses.date_utc)}</td>
-            <td>{infoRealeses.rocket}</td>
-          </tr> 
+          <p style={ { width:"500px" } }>Em manutenção...</p>
+          // <tr>
+          //   <td>{infoRealeses.name}</td>
+          //   <td>{infoRealeses.flight_number}</td>
+          //   <td>{Date(infoRealeses.date_utc)}</td>
+          //   <td>{infoRealeses.rocket}</td>
+          // </tr> 
         :
           infoRealeses.map((obj, index) => (
           <tr key={index}>
