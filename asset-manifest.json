@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ci-space-x/static/css/main.dfd67bd5.css",
-    "main.js": "/ci-space-x/static/js/main.951a4c05.js",
+    "main.js": "/ci-space-x/static/js/main.48941f12.js",
     "static/js/787.b67fefc3.chunk.js": "/ci-space-x/static/js/787.b67fefc3.chunk.js",
     "static/media/foguete-estrelas.png": "/ci-space-x/static/media/foguete-estrelas.c0f053a551850cf8f98c.png",
     "static/media/casa-cinza.png": "/ci-space-x/static/media/casa-cinza.a2e1103f8649d372a600.png",
@@ -9,11 +9,11 @@
     "static/media/foguete-cinza.png": "/ci-space-x/static/media/foguete-cinza.c58c4569e3a2c53184c5.png",
     "index.html": "/ci-space-x/index.html",
     "main.dfd67bd5.css.map": "/ci-space-x/static/css/main.dfd67bd5.css.map",
-    "main.951a4c05.js.map": "/ci-space-x/static/js/main.951a4c05.js.map",
+    "main.48941f12.js.map": "/ci-space-x/static/js/main.48941f12.js.map",
     "787.b67fefc3.chunk.js.map": "/ci-space-x/static/js/787.b67fefc3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dfd67bd5.css",
-    "static/js/main.951a4c05.js"
+    "static/js/main.48941f12.js"
   ]
 }
