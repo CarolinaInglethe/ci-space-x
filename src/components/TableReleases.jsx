@@ -24,19 +24,21 @@ const TableReleases = ({ infoRealeses }) => {
       </thead>
       <tbody>
         {
-          infoRealeses.name ?  <tr>
-          <td>{infoRealeses.name}</td>
-          <td>{infoRealeses.flight_number}</td>
-          <td>{Date(infoRealeses.date_utc)}</td>
-          <td>{infoRealeses.rocket}</td>
-        </tr> :
-           infoRealeses.map((obj, index) => (
-            <tr key={index}>
-              <td>{obj.name}</td>
-              <td>{obj.flight_number}</td>
-              <td>{Date(obj.date_utc)}</td>
-              <td>{obj.rocket}</td>
-            </tr>
+          infoRealeses.name ?  
+          <tr>
+            <td>{infoRealeses.name}</td>
+            <td>{infoRealeses.flight_number}</td>
+            <td>{Date(infoRealeses.date_utc)}</td>
+            <td>{infoRealeses.rocket}</td>
+          </tr> 
+        :
+          infoRealeses.map((obj, index) => (
+          <tr key={index}>
+            <td>{obj.name}</td>
+            <td>{obj.flight_number}</td>
+            <td>{Date(obj.date_utc)}</td>
+            <td>{obj.rocket}</td>
+          </tr>
           ))
         }
         
@@ -46,8 +48,8 @@ const TableReleases = ({ infoRealeses }) => {
   )
 }
 
-TableReleases.prototype = {
-  infoRealeses: PropTypes.array,
+TableReleases.propTypes = {
+  infoRealeses: PropTypes.object,
 }
 
 export default TableReleases;
