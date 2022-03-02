@@ -23,6 +23,6 @@ Ele irá conter uma pagina inicial de boas vindas, em todas páginas inclusive a
  
 Na página de Lançamentos , terá outros links para poder acessar diferentes tabelas com informaçoes de Todos lançamentos, próximo lançamento, último lançamento , próximos lançamentos e lançamentos passados. 
 
-#### O projeto está em  construção....
+#### 
 Acesse o site , através do link github pages :
  https://carolinainglethe.github.io/ci-space-x/
