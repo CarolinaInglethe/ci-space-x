@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const TableReleases = ({ infoRealeses }) => {
+const TableReleases = ({ infoReleases, infoRelease }) => {
   const columns = [ "Nome", "Numero do voo" , "Data/Hora de lançamento", " Id Foguete" ]
   
-  console.log(infoRealeses)
+  console.log(infoReleases, infoRelease)
 
-  if(!infoRealeses) return <p>Carrengando...</p>
+  if(!infoReleases && !infoRelease) return <p>Carrengando...</p>
 
   return (
     <div className="table-releases-container">
@@ -24,16 +24,16 @@ const TableReleases = ({ infoRealeses }) => {
       </thead>
       <tbody>
         {
-          infoRealeses.name ?  
-          <p style={ { width:"500px" } }>Em manutenção...</p>
-          // <tr>
-          //   <td>{infoRealeses.name}</td>
-          //   <td>{infoRealeses.flight_number}</td>
-          //   <td>{Date(infoRealeses.date_utc)}</td>
-          //   <td>{infoRealeses.rocket}</td>
-          // </tr> 
+          infoRelease ?  
+          // <p style={ { width:"500px" } }>Em manutenção...</p>
+          <tr>
+            <td>{infoRelease.name}</td>
+            <td>{infoRelease.flight_number}</td>
+            <td>{Date(infoRelease.date_utc)}</td>
+            <td>{infoRelease.rocket}</td>
+          </tr> 
         :
-          infoRealeses.map((obj, index) => (
+          infoReleases.map((obj, index) => (
           <tr key={index}>
             <td>{obj.name}</td>
             <td>{obj.flight_number}</td>

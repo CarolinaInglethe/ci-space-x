@@ -18,7 +18,7 @@ const Releasers = () => {
     <div className="releases-container">
        <NavBarReleases />
        <h2>Todos Lançamentos</h2>
-       <TableReleases infoRealeses={ infoAllReleases }/>
+       <TableReleases infoReleases={ infoAllReleases }/>
     </div>
   )
 }

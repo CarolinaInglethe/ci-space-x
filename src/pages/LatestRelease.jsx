@@ -18,7 +18,7 @@ const LatestRelease = () => {
     <div className="releases-container">
       <NavBarReleases />
       <h2>Último Lançamento</h2>
-      <TableReleases infoRealeses={ infoLatestRelease }/>
+      <TableReleases infoRelease={ infoLatestRelease }/>
     </div>
   )
 }

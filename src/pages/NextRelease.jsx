@@ -19,7 +19,7 @@ const NextRelease = () => {
     <div className="releases-container">
       <NavBarReleases />
       <h2>Próximo Lançamento</h2>
-      <TableReleases infoRealeses={ infoNextRelease }/>
+      <TableReleases infoRelease={ infoNextRelease }/>
     </div>
   )
 }
