@@ -2,7 +2,6 @@ import React from 'react';
 import { screen } from '@testing-library/react';
 import renderWithRouter from './renderWithRouter';
 import Home from '../pages/Home'
-import Releases from '../pages/Releases';
 
 describe('Home page' , () => {
   test('Deve existir o texto "Seja Bem vindo(a) ao Space-X"', () => {
