@@ -17,6 +17,9 @@ Assim que o projeto estiver em sua maquina você deve :
 - para rodar testes : npm test;
 - depois de rodar o test digite : a
 
+### Tecnologias utilizadas 
+- React , react-hooks , react-router , context-api , javascript , testing-library/react , CSS , jest
+
 ## Como é o site ?
 
 Ele irá conter uma pagina inicial de boas vindas, em todas páginas inclusive a Home de boas vindas terá link para transitar entre as paginas.
