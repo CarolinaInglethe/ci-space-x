@@ -27,6 +27,6 @@ Ele irá conter uma pagina inicial de boas vindas, em todas páginas inclusive a
 Na página de Lançamentos , terá outros links para poder acessar diferentes tabelas com informaçoes de Todos lançamentos, próximo lançamento, último lançamento , próximos lançamentos e lançamentos passados. 
 
 #### 
-Disponivel no github pages , na descriçao  do repositorio
+Disponivel no github pages , na descriçao  do repositorio (about )
 
  
