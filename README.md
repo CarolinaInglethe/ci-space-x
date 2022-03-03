@@ -28,4 +28,5 @@ Na página de Lançamentos , terá outros links para poder acessar diferentes ta
 
 #### 
 Acesse o site , através do link github pages :
- https://carolinainglethe.github.io/ci-space-x/
+<a href="https://carolinainglethe.github.io/ci-space-x/" target="_blank"> Site Space-X </a>
+ 
